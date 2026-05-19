@@ -1,0 +1,25 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+.colcon/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# ROS2 bags and databases
+*.bag
+*.db3
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>terrain_planner</name>
+  <version>0.0.0</version>
+  <description>Terrain planner package for A* global path planning on terrain costmap</description>
+  <maintainer email="luym@todo.todo">luym</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>grid_map_msgs</depend>
+  <depend>grid_map_ros</depend>
+  <depend>grid_map_core</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
