@@ -12,6 +12,7 @@ setup(
         ('share/' + package_name + '/launch', ['launch/step56.launch.py']),
         ('share/' + package_name + '/launch', ['launch/closed_loop_demo.launch.py']),
         ('share/' + package_name + '/launch', ['launch/step56_test.launch.py']),
+        ('share/' + package_name + '/launch', ['launch/step56_smac_integration.launch.py']),
         ('share/' + package_name + '/config', [
             'config/motion_adapter.yaml',
             'config/safety_supervisor.yaml',
@@ -30,6 +31,8 @@ setup(
             'safety_supervisor_node = dog_nav_step56.safety_supervisor_node:main',
             'simulated_input_node = dog_nav_step56.simulated_input_node:main',
             'test_trace_recorder_node = dog_nav_step56.test_trace_recorder_node:main',
+            'terrain_cost_scalar_bridge_node = dog_nav_step56.terrain_cost_scalar_bridge_node:main',
+            'odom_imu_sim_node = dog_nav_step56.odom_imu_sim_node:main',
         ],
     },
 )
